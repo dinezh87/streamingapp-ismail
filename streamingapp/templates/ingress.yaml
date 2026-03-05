@@ -5,10 +5,12 @@ kind: Ingress
 metadata:
   name: streamingapp-ingress
   annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/healthcheck-path: /
 
 spec:
-  ingressClassName: nginx
+  ingressClassName: alb
 
   rules:
   - host: ismail-profile.online
