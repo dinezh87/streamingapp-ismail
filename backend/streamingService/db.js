@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    const uri = process.env.MONGO_URI || 'mongodb://appuser:apppass@backend-mongoservice:27017/streamingapp';
+    const uri = process.env.MONGO_URI || 'mongodb://appuser:apppass@streamingapp-mongoservice.default.svc.cluster.local:27017/streamingapp';
     if (!mongoose.connection.readyState) {
       console.log('[streaming/db] Connecting to MongoDB at:', uri);
       await mongoose.connect(uri, {
