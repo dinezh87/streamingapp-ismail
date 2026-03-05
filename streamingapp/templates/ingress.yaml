@@ -21,7 +21,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: streamingapp-authservice
+            name: streaming-authservice
             port:
               number: 3001
 
@@ -29,7 +29,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: streamingapp-adminservice
+            name: streaming-adminservice
             port:
               number: 3003
 
@@ -37,7 +37,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: streamingapp-chatservice
+            name: streaming-chatservice
             port:
               number: 3004
 
@@ -45,7 +45,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: streamingapp-streamingservice
+            name: streaming-streamingservice
             port:
               number: 3002
 
@@ -53,7 +53,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: streamingapp-frontend
+            name: streaming-frontend
             port:
               number: 80
 
