@@ -77,7 +77,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: authservice
+            name: auth
             port:
               number: 3001
 
@@ -86,7 +86,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: adminservice
+            name: admin
             port:
               number: 3003
 
@@ -95,7 +95,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: chatservice
+            name: chat
             port:
               number: 3004
 
@@ -104,7 +104,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: streamingservice
+            name: streaming
             port:
               number: 3002
 
@@ -115,4 +115,4 @@ spec:
           service:
             name: frontend
             port:
-              number: 80
+              number: 80  
